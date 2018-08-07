@@ -1,5 +1,7 @@
 <?php
 
+print __DIR__;
+
 /**
  * Laravel - A PHP Framework For Web Artisans
  *
