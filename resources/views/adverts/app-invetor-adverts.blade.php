@@ -81,7 +81,21 @@
     </div>
 </nav>
 
-@yield('content')
+<div class="container">
+    <div class="row">
+        <div class="col-md-9" style="">
+            @yield('content')
+        </div>
+        <div class="col-md-3">
+            <div class="row left-block-advert-site">
+                <div class="col-md-12 block-advert-site">1</div>
+                <div class="col-md-12 block-advert-site">2</div>
+                <div class="col-md-12 block-advert-site">3</div>
+                <div class="col-md-12 block-advert-site">4</div>
+            </div>
+        </div>
+    </div>
+</div>
 
         <!-- JavaScripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>

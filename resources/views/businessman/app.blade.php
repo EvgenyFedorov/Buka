@@ -80,8 +80,52 @@
         </div>
     </div>
 </nav>
-
-@yield('content')
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="list-group">
+                <a href="#" class="list-group-item active">
+                    <span class="glyphicon glyphicon-th-list"></span>&nbsp;&nbsp;Меню
+                </a>
+                <a href="/profile" class="list-group-item">
+                    <span class="glyphicon glyphicon-bell"></span>&nbsp;&nbsp;Уведомления <span class="badge">18</span>
+                </a>
+                <a href="/profile/adverts" class="list-group-item">
+                    <span class="glyphicon glyphicon-bullhorn"></span>&nbsp;&nbsp;Мои объявления <span class="badge">{{$count_adverts}}</span>
+                </a>
+                <a href="#" class="list-group-item">
+                    <span class="glyphicon glyphicon-briefcase"></span>&nbsp;&nbsp;Мои проекты <span class="badge">40</span>
+                </a>
+                <a href="/profile/dialogs" class="list-group-item">
+                    <span class="glyphicon glyphicon-comment"></span>&nbsp;&nbsp;Сообщения <span class="badge">{{$count_dialogs}}</span>
+                </a>
+                <a href="#" class="list-group-item">
+                    <span class="glyphicon glyphicon-star"></span>&nbsp;&nbsp;Избранное <span class="badge">25</span>
+                </a>
+                <a href="#" class="list-group-item">
+                    <span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;Партнеры
+                </a>
+                <a href="/profile/settings" class="list-group-item">
+                    <span class="glyphicon glyphicon-cog"></span>&nbsp;&nbsp;Настрока учетная запись
+                </a>
+                <a href="#" class="list-group-item">
+                    <span class="glyphicon glyphicon-log-out"></span>&nbsp;&nbsp;Выйти
+                </a>
+            </div>
+        </div>
+        <div class="col-md-6" style="border: 1px solid #f1f1f1; padding: 20px;">
+            @yield('content')
+        </div>
+        <div class="col-md-3">
+            <div class="row left-block-advert-site">
+                <div class="col-md-12 block-advert-site">1</div>
+                <div class="col-md-12 block-advert-site">2</div>
+                <div class="col-md-12 block-advert-site">3</div>
+                <div class="col-md-12 block-advert-site">4</div>
+            </div>
+        </div>
+    </div>
+</div>
 
         <!-- JavaScripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
